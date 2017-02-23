@@ -15,17 +15,38 @@
 <body>
     <div id="fullpage">
         <div class="section">
-            <div id="chart1">
-
+            <div id="chart1"></div>
+        </div>
+        <div class="section">
+            <div id="chart2"></div>
+        </div>
+        <div class="section">
+            <div id="chart3"></div>
+        </div>
+        <div class="section">
+            <div id="chart4"></div>
+            <div id="sliders">
+                <table>
+                    <tr>
+                        <td>Alpha Angle</td>
+                        <td><input id="alpha" type="range" min="0" max="45" value="15"/> <span id="alpha-value" class="value"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Beta Angle</td>
+                        <td><input id="beta" type="range" min="-45" max="45" value="15"/> <span id="beta-value" class="value"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Depth</td>
+                        <td><input id="depth" type="range" min="20" max="100" value="50"/> <span id="depth-value" class="value"></span></td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js"></script>
     <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="http://cdn.hcharts.cn/highcharts/highcharts-3d.js"></script>
     <script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
     <script src="main.js"></script>
 </body>
